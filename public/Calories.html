@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">Food pal</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="BMI.html"><h3>BMI Check</h3></a></li>
+            <li><a href="Calories.html"><h3>Calroies Check</h3></a></li>
+            <li><a href="recipe.html"><h3>recipe</h3>></a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <form name="TESTING">
+        <table border="1" width="900" height="200" cellpadding="10" cellspacing="5">
+        <tr><th colspan="4"><h1>Calories need </h1></th></tr>
+        
+        
+ <tr>  
+	<th><h3>Weight</h3></th>
+	<th><h3>Height</h3></th>
+	<th><h3>Age</h3></th>
+	<th><h3>Calories need</h3></th>
+
+</tr>
+        
+        <tr></tr>
+        <td><input type="number" name="INPUT1" id="input1" onchange="calculate();"/></td>
+        <td><input type="number" name="INPUT2" id="input2" onchange="calculate();"/></td>
+        <td><input type="number" name="INPUT3" id="input3" onchange="calculate();"/></td>
+        <td><input type="number" name="OUTPUT1" id="output"></td>
+        <table>
+        
+        </form>
+        
+        <script type="text/javascript">
+        function calculate() {
+        
+        var USERINPUT1 = document.TESTING.INPUT1.value;
+        var USERINPUT2 = document.TESTING.INPUT2.value;
+        var USERINPUT3 = document.TESTING.INPUT3.value;
+        var CALC1 = USERINPUT1*9.6;
+        var CALC2 = USERINPUT2*1.8;
+        var CALC3 = USERINPUT3*4.7;
+        var CALC4 = 655 + CALC1 + CALC2-CALC3;
+        
+        document.TESTING.OUTPUT1.value = CALC4*1.2;
+        
+        }
+        </script>
+        <br>
+        <br>
+<h2>Calories cheatsheet</h2>
+<br>
+<br>
+
+<br>
+<br>
+<img src="calories.jpg" alt="Calories cheatsheet" width="1000" height="900">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="env.js"></script>
+
+</body>
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Food Pal</h5>
+          <p class="grey-text text-lighten-4">Contact number: 1234567      <Address>999 Eva street</Address></p>
+        </div>
+       
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      
+      <a class="grey-text text-lighten-4 right" href="https://www2.health.vic.gov.au/public-health/food-safety">More food health info</a>
+      </div>
+    </div>
+  </footer>
+</html>
